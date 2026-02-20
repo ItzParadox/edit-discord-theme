@@ -576,11 +576,6 @@ nav[aria-label="Servers"] > div,
   --serverbar-top-padding: 32px; /* adjust */
 }
 
-/* Add internal spacing instead of moving the container */
-nav[aria-label="Servers"]{
-  padding-top: var(--serverbar-top-padding) !important;
-}
-
 /* If using hashed class instead of aria label */
 [class^="guilds_"],
 [class*=" guilds_"]{
