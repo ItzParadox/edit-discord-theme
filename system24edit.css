@@ -318,7 +318,6 @@ body {
             }
         }
 
-   
         .panels__5e434::after {
             content: 'user';
         }
@@ -558,27 +557,3 @@ body {
         border-radius: 0 !important;
     }
 }
-:root{
-  --serverbar-top-offset: 48px; /* adjust */
-}
-
-/* Server list container (most robust selectors) */
-nav[aria-label="Servers"],
-nav[aria-label="Servers"] > div,
-[class^="guilds_"],
-[class*=" guilds_"]{
-  top: var(--serverbar-top-offset) !important;
-  height: calc(100vh - var(--serverbar-top-offset)) !important;
-}
-:root { --serverbar-top-offset: 48px; }
-
-:root{
-  --serverbar-top-padding: 32px; /* adjust */
-}
-
-/* If using hashed class instead of aria label */
-[class^="guilds_"],
-[class*=" guilds_"]{
-  padding-top: var(--serverbar-top-padding) !important;
-}
-
