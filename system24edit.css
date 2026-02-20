@@ -570,10 +570,16 @@ nav[aria-label="Servers"] > div,
   top: var(--serverbar-top-offset) !important;
   height: calc(100vh - var(--serverbar-top-offset)) !important;
 }
+:root { --serverbar-top-offset: 48px; }
 
-/* If Discord uses inset instead of top/height */
-nav[aria-label="Servers"],
-[class^="guilds_"],
-[class*=" guilds_"]{
-  inset: var(--serverbar-top-offset) auto 0 auto !important;
+/* Most common: the nav itself is pinned */
+nav[aria-label="Servers"]{
+  position: fixed !important; /* harmless if already fixed */
+  top: var(--serverbar-top-offset) !important;
+  height: calc(100vh - var(--serverbar-top-offset)) !important;
+}
+
+/* Keep the scroll area filling */
+nav[aria-label="Servers"] [class*="scroller"]{
+  height: 100% !important;
 }
