@@ -558,17 +558,3 @@ body {
         border-radius: 0 !important;
     }
 }
-/* --- Server list (guilds) top offset: makes top-right arrows easier to hit --- */
-:root{
-  --serverlist-top-offset: 44px; /* tweak: 24px / 36px / 44px / 52px etc */
-}
-
-.visual-refresh .guilds__5e434{
-  margin-top: var(--serverlist-top-offset) !important;
-  height: calc(100vh - var(--serverlist-top-offset)) !important;
-}
-
-/* Keep the server scroller filling the new height */
-.visual-refresh .guilds__5e434 [class*="scroller"]{
-  height: 100% !important;
-}
