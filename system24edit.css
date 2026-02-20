@@ -558,3 +558,22 @@ body {
         border-radius: 0 !important;
     }
 }
+:root{
+  --serverbar-top-offset: 48px; /* adjust */
+}
+
+/* Server list container (most robust selectors) */
+nav[aria-label="Servers"],
+nav[aria-label="Servers"] > div,
+[class^="guilds_"],
+[class*=" guilds_"]{
+  top: var(--serverbar-top-offset) !important;
+  height: calc(100vh - var(--serverbar-top-offset)) !important;
+}
+
+/* If Discord uses inset instead of top/height */
+nav[aria-label="Servers"],
+[class^="guilds_"],
+[class*=" guilds_"]{
+  inset: var(--serverbar-top-offset) auto 0 auto !important;
+}
