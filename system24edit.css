@@ -214,6 +214,7 @@ body {
         white-space: pre;
         line-height: 1.2;
         background: linear-gradient(to right, var(--brand-360) 0%, var(--background-accent) 25%, var(--background-accent) 75%, var(--brand-360) 100%);
+        background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-size: 200% auto;
@@ -231,7 +232,7 @@ body {
             background-position: 100% 50%;
         }
         50.0001% {
-            background-position: -100%, 50%;
+            background-position: -100% 50%;
         }
         100% {
             background-position: 0% 50%;
@@ -565,3 +566,4 @@ body {
         rx: 0px !important;
     }
 }
+
